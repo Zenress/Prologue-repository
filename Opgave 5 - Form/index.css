@@ -10,6 +10,11 @@ fieldset {
 }
 
 input {
-    text-align: center;
+    text-align: left;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+legend{
+    font-weight: bolder;
+    font-size: 1,25vw;
 }
