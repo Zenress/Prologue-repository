@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" id="form">
+    <form action="https://youtu.be/dQw4w9WgXcQ"id="form">
         <fieldset>
             <Legend>Signup Form</Legend>
             
@@ -27,13 +27,13 @@
 
             <div>
                 <label for="Username">Username*</label>
-                <input id="Username" type="text" required placeholder="Your username here.">
+                <input id="Username" type="text" required minlength="4" placeholder="Your username here.">
             </div>
 
             <div>
                 <span>Your password must contain atleast 8 characters <br></span>
                 <label for="Password">Password*</label>
-                <input id="Password" type="password" required placeholder="Your password here.">
+                <input id="Password" type="password" required minlength="8" placeholder="Your password here.">
             </div>
         </fieldset>
         
@@ -82,7 +82,11 @@
                 <label for="submit"></label>
                 <input id="submit" type="submit" value="Sign me up">
             </div>
+            <div>
+                <input type="reset" value="Clear form">
+            </div>
         </fieldset>
     </form>
+    
 </body>
 </html>
