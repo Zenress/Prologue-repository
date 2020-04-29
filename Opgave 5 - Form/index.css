@@ -1,0 +1,15 @@
+body {
+    background-color: cadetblue;
+}
+form {
+    display: inline-block;
+    width: 50vmin;
+}    
+fieldset {
+    margin-bottom: 15px;
+}
+
+input {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
