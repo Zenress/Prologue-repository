@@ -23,6 +23,7 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: hsla(0, 0%, 0%, 0.2);
+    transition: all .3s ease-in-out;
 }
 
 .video {
@@ -47,7 +48,7 @@ body {
 }
 
 nav {
-    background-color: hsla(197,73%, 63%);
+    background-color: transparent;
     height: 100vh;
     width: 100%;
     position: absolute;
@@ -80,6 +81,12 @@ nav ul {
     position: absolute;
     right: 0;
     transition: right .3s ease-in-out;
+    background-color: transparent;
+}
+
+#toggle:checked ~ .overlay {
+    opacity: 0;
+    transition: all .3s ease-in-out;
 }
 
 #toggle {
