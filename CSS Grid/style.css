@@ -47,7 +47,9 @@ main {
 
 @media (min-width: 1000px) {
     .side1, .side2 {
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .side1 {
         grid-row: 2 / 4;
