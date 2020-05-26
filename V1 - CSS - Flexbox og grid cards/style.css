@@ -1,47 +1,24 @@
-@media (min-width: 500px) {
-    .bigarticle {
-        grid-area: 1 / 1 / 3 / 3;
-    }
-    main {
-        display: grid;
-        grid-template-rows: 20px 20px 20px 20px;
-        grid-template-columns: 20px 20px;
-    }
-    img {
-        width: 1000px;
-        height: auto;
-    }
-}
-
-@media (min-width: 1000px) {
-
-}
-img {
-    display: flex;
-    justify-content: center;
-    width: 377px;
-    height: auto;
-}
-
+ 
 
 body {
     margin: 0;
-    display: grid;
-    height: 100vh;
+    width: 100%;
 }
 
 main {
+    background-color:rgb(231, 230, 230);
     margin: 0;
-    height: 100vh;
+    /* height: 100%; */
+    /* width: 375px; */
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 220px 20px 100px 260px 20px 100px 220px 20px 100px 260px 20px 100px 240px 20px 100px 250px 20px 100px 257px 20px;
+    /* grid-template-columns: auto; */
+    /* grid-template-rows: 220px 50px 100px 260px 50px 100px 220px 50px 100px 260px 50px 100px 240px 50px 100px 250px 50px 100px 257px 50px; */
 }
 
 section {
     display: grid;
 }
-
+*/
 .bigarticle,
 .business,
 .usability,
@@ -49,9 +26,19 @@ section {
 .alienlander,
 .photoshop,
 .china {
-    background-color: green;
+    /* box-shadow: 0px 10px 20px 0px grey; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: expanded;
+    font-size: 15px;
+    background-color: whitesmoke;
+    border-radius: 2px;
+    width: 100%;
 }
-
+/*
 .img1 {
     grid-area: 1 / 1 / 2 / 2;
 }
@@ -107,3 +94,31 @@ section {
 .china {
     grid-area: 20 / 1 / 21 / 2;
 }
+*/
+
+@media (min-width: 500px) {
+    .main {
+        display: grid;
+        width: 100%;
+        grid-template-rows: 300px 300px 300px 300px;
+        grid-template-columns: auto auto;
+    }
+    .bigarticle {
+        grid-area: 1 / 1 / 3 / 3;
+    }
+    
+    img {
+        height: auto;
+        grid-area: 1 / 1 / 3 / 3;
+    }
+}
+/*
+@media (min-width: 1000px) {
+
+}
+*/
+img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+} 
