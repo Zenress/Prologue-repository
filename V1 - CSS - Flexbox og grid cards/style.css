@@ -139,7 +139,6 @@ footer {
     article > p {
         display: flex;
         flex-grow: 1;
-        min-width: ;
     }
     article > footer {
         margin-bottom: 15px;
