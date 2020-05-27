@@ -7,18 +7,22 @@ body {
 
 main {
     background-color:rgb(231, 230, 230);
-    margin: 0;
-    /* height: 100%; */
-    /* width: 375px; */
     display: grid;
-    /* grid-template-columns: auto; */
-    /* grid-template-rows: 220px 50px 100px 260px 50px 100px 220px 50px 100px 260px 50px 100px 240px 50px 100px 250px 50px 100px 257px 50px; */
+}
+.bigarticle,
+.usability,
+.alienlander,
+.business {
+    margin-left: 10px;
 }
 
-section {
-    display: grid;
+.bigarticle,
+.julyedition,
+.photoshop,
+.china {
+    margin-right: 10px;
 }
-*/
+
 .bigarticle,
 .business,
 .usability,
@@ -26,82 +30,24 @@ section {
 .alienlander,
 .photoshop,
 .china {
-    /* box-shadow: 0px 10px 20px 0px grey; */
-    /* display: flex; */
-    /* align-items: center; */
-    /* flex-wrap: wrap; */
-    font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
-    font-stretch: expanded;
-    font-size: 15px;
     background-color: whitesmoke;
-    border-radius: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+img {
     width: 100%;
-}
-/*
-.img1 {
-    grid-area: 1 / 1 / 2 / 2;
-}
-
-.bigarticle {
-    grid-area: 2 / 1 / 3 / 2;
-}
-
-.img2 {
-    grid-area: 4 / 1 / 5 / 2;
-}
-
-.usability {
-    grid-area: 5 / 1 / 6 / 2;
-}
-
-.img3 {
-    grid-area: 7 / 1 / 8 / 2;
-}
-
-.julyedition {
-    grid-area: 8 / 1 / 9 / 2;
-}
-
-.img4 {
-    grid-area: 10 / 1 / 11 / 2;
-}
-
-.alienlander {
-    grid-area: 11 / 1 / 12 / 2;
-}
-
-.img5 {
-    grid-area: 13 / 1 / 14 /2;
-}
-
-.photoshop {
-    grid-area: 14 / 1 / 15 / 2;
-}
-
-.img6 {
-    grid-area: 16 / 1 / 17 / 2;
-}
-
-.business {
-    grid-area: 17 / 1 / 18 / 2;
-}
-
-.img7 {
-    grid-area: 19 / 1 / 20 / 2;
-}
-
-.china {
-    grid-area: 20 / 1 / 21 / 2;
-}
-*/
+    height: 300px;
+    object-fit: cover;
+} 
 
 @media (min-width: 500px) {
     .main {
-        display: grid;
         width: 100%;
-        grid-template-rows: 300px 300px 300px 300px;
-        grid-template-columns: auto auto;
+        grid-gap: 10px;
+        gap: 10px;
     }
     .bigarticle {
         grid-area: 1 / 1 / 3 / 3;
@@ -111,14 +57,77 @@ section {
         height: auto;
         grid-area: 1 / 1 / 3 / 3;
     }
-}
-/*
-@media (min-width: 1000px) {
+    .bigarticle,
+    .usability,
+    .alienlander,
+    .business {
+        margin-left: 10px;
+        margin-right: 0px;
+    }
 
+    .bigarticle,
+    .julyedition,
+    .photoshop,
+    .china {
+        margin-right: 10px;
+    }
 }
-*/
-img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-} 
+
+@media (min-width: 1000px) {
+    body {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+    }
+    .main {
+        justify-content: center;
+        width: 100%;
+        grid-gap: 10px;
+        gap: 10px;
+        grid-template-rows: 0;
+        grid-template-columns: 260px 260px 260px 260px;
+        grid-template-rows: 250px 250px 250px 250px;
+        padding-top: 20px;
+    }
+    .bigarticle {
+        grid-area: 1 / 1 / 3 / 3;
+    }
+    
+    .img1 {
+        height: auto;
+        grid-area: 1 / 1 / 3 / 3;
+        object-fit: cover;
+    }
+    img {
+        grid-area: 0;
+        height: 180px;
+    }
+    .business {
+        grid-area: 3 / 3 / 5 / 4;
+    }
+    .alienlander {
+        grid-area: 3 / 1 / 5 / 2;
+    }
+    .china {
+        grid-area: 3 / 4 / 5 / 5;
+    }
+    .photoshop {
+        grid-area: 3 / 2 / 5 / 3;
+    }
+    .usability {
+        grid-area: 1 / 3 / 3 / 4;
+    }
+    .julyedition {
+        grid-area: 1 / 4 / 3 / 5;
+    }
+    article > h1,
+    article > h2,
+    article > p,
+    article > footer {
+        margin-left: 10px;
+    }
+    p {
+        display: flex;
+        flex-grow: 10;
+    }
+}
