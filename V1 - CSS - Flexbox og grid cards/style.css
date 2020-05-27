@@ -43,6 +43,12 @@ img {
     object-fit: cover;
 } 
 
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: gray;
+}
+
 @media (min-width: 500px) {
     .main {
         width: 100%;
@@ -85,7 +91,7 @@ img {
         grid-gap: 10px;
         gap: 10px;
         grid-template-rows: 0;
-        grid-template-columns: 260px 260px 260px 260px;
+        grid-template-columns: 300px 300px 300px 300px;
         grid-template-rows: 250px 250px 250px 250px;
         padding-top: 20px;
     }
@@ -126,8 +132,20 @@ img {
     article > footer {
         margin-left: 10px;
     }
-    p {
+    article {
         display: flex;
-        flex-grow: 10;
+        flex-direction: column;
+    }
+    article > p {
+        display: flex;
+        flex-grow: 1;
+        min-width: ;
+    }
+    article > footer {
+        margin-bottom: 15px;
+    }
+
+    .bigarticle > footer {
+        margin-bottom: 50px;
     }
 }
